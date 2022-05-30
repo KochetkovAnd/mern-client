@@ -23,7 +23,7 @@ export const Profile = (props) => {
     try {
       console.log(input)
       const data = await request(
-        "/api/auth/profile",
+        "https://anamnesis-vitae.herokuapp.com/api/auth/profile",
         "POST",
         { name: input.firstName + " " + input.secondName },
         { Authorization: `Bearer ${auth.token}` }
@@ -37,7 +37,7 @@ export const Profile = (props) => {
   const setProfileData = async () => {
     try {
       const data = await request(
-        "/api/auth/profileData",
+        "https://anamnesis-vitae.herokuapp.com/api/auth/profileData",
         "POST",
         {},
         { Authorization: `Bearer ${auth.token}` }

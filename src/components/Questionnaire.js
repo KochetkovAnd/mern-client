@@ -57,7 +57,7 @@ export const Questionnaire = (props) => {
   const setAnswersHandler = async () => {
     try {
       const data = await request(
-        "/api/auth/finish",
+        "https://anamnesis-vitae.herokuapp.com/api/auth/finish",
         "POST",
         {
           from: answers.toString(),
