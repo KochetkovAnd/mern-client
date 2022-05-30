@@ -6,7 +6,6 @@ import {AuthContext} from "./context/AuthContext";
 process.env.CI = false
 
 function App() {
-    process.env.CI = false
     
     const {token, login, logout, userId, accountType} = useAuth()
     const  isAuthenticated = !!token
