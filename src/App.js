@@ -3,7 +3,7 @@ import 'materialize-css'
 import {useRoutes} from "./routes";
 import {useAuth} from "./hooks/auth.hook";
 import {AuthContext} from "./context/AuthContext";
-
+process.env.CI = false
 
 function App() {
     
