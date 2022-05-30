@@ -3,8 +3,10 @@ import 'materialize-css'
 import {useRoutes} from "./routes";
 import {useAuth} from "./hooks/auth.hook";
 import {AuthContext} from "./context/AuthContext";
+process.env.CI = true
 
 function App() {
+    
     const {token, login, logout, userId, accountType} = useAuth()
     const  isAuthenticated = !!token
     const routes = useRoutes(isAuthenticated, accountType)
