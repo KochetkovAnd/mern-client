@@ -50,7 +50,7 @@ switch (window) {
                         <li><a onClick={() => {setWindow(1)}} className="navbar-vitae-a-black-passive">Результаты</a></li>
                         <li><a onClick={() => {setWindow(2)}} className="navbar-vitae-a-white-active">Профиль</a></li>
                         <li><a onClick={() => {setWindow(3)}} className="navbar-vitae-a-white-active">Справка</a></li>
-                        <li><a  className="navbar-vitae-a-white-active">Статистика</a></li>
+                        <li><a href = "https://app-flask-vitae.herokuapp.com/" className="navbar-vitae-a-white-active">Статистика</a></li>
                         <li><LogoutText/></li>
                     </ul>
                     { patientList && <ResultsView patients={patientList}/> }
@@ -65,7 +65,7 @@ switch (window) {
                         <li><a onClick={() => {setWindow(1)}} className="navbar-vitae-a-white-active">Результаты</a></li>
                         <li><a onClick={() => {setWindow(2)}} className="navbar-vitae-a-black-passive">Профиль</a></li>
                         <li><a onClick={() => {setWindow(3)}} className="navbar-vitae-a-white-active">Справка</a></li>
-                        <li><a  className="navbar-vitae-a-white-active">Статистика</a></li>
+                        <li><a href = "https://app-flask-vitae.herokuapp.com/" className="navbar-vitae-a-white-active">Статистика</a></li>
                         <li><LogoutText/></li>
                     </ul>
                 </div>
@@ -80,7 +80,7 @@ switch (window) {
                         <li><a onClick={() => {setWindow(1)}} className="navbar-vitae-a-white-active">Результаты</a></li>
                         <li><a onClick={() => {setWindow(2)}} className="navbar-vitae-a-white-active">Профиль</a></li>
                         <li><a onClick={() => {setWindow(3)}} className="navbar-vitae-a-black-passive">Справка</a></li>
-                        <li><a  className="navbar-vitae-a-white-active">Статистика</a></li>
+                        <li><a href = "https://app-flask-vitae.herokuapp.com/" className="navbar-vitae-a-white-active">Статистика</a></li>
                         <li><LogoutText/></li>
                     </ul>
                     <ApplicationHelp/>
